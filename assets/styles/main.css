@@ -1,0 +1,13 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.main-content {
+  font-family: 'Red Hat Text', sans-serif;
+  line-height: 1.5;
+  max-width: 1440px;
+}
+/*# sourceMappingURL=main.css.map */

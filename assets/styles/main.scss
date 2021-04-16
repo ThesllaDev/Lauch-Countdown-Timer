@@ -1,0 +1,20 @@
+// PRIMARY COLORS
+$GrayishBlue: #8486a9;
+$SoftRed: #fb6087;
+
+// NEUTRAL
+$White: #fff;
+$DarkDesaturatedBlue: #343650;
+$VeryDarkBlue: #1e1f29;
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-content{
+    font-family: 'Red Hat Text', sans-serif;
+    line-height: 1.5;
+    max-width: 1440px;
+}
