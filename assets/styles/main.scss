@@ -4,17 +4,186 @@ $SoftRed: #fb6087;
 
 // NEUTRAL
 $White: #fff;
-$DarkDesaturatedBlue: #343650;
-$VeryDarkBlue: #1e1f29;
 
-*{
+* {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
 }
 
-.main-content{
-    font-family: 'Red Hat Text', sans-serif;
+.main-content {
+    align-items: center;
+    background: url("../img/bg-stars.svg"), url("../img/pattern-hills.svg") no-repeat;
+    background-color: #191a24;
+    background-position: bottom;
+    display: flex;
+    flex-flow: column nowrap;
+    font-family: "Red Hat Text", sans-serif;
+    min-height: 100vh;
+    justify-content: flex-start;
     line-height: 1.5;
     max-width: 1440px;
+    padding-top: 15vh;
+    position: relative;
+    .main-title {
+        color: $White;
+        font-size: 1.5em;
+        letter-spacing: 8px;
+        margin: 20px 20px 109px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .container-countdown {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .countdown-block {
+        align-items: center;
+        display: flex;
+        flex-flow: column nowrap;
+        margin-right: 30px;
+        &:last-child {
+            margin-right: 0;
+        }
+        .subtitle {
+            color: $GrayishBlue;
+        }
+    }
+    .time-element {
+        background-color: #33354d;
+        border-radius: 8px;
+        box-shadow: 0px 8px 0px 0px #16151d;
+        color: $SoftRed;
+        font-size: 5.5em;
+        height: 140px;
+        line-height: 138px;
+        margin-bottom: 27px;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        width: 150px;
+        &::before,
+        &::after {
+            background: #24242e;
+            border-radius: 50%;
+            content: "";
+            height: 10px;
+            position: absolute;
+            top: calc(50% - 5px);
+            width: 10px;
+            z-index: 6;
+        }
+        &::before {
+            left: -5px;
+        }
+        &::after {
+            right: -5px;
+        }
+        > span {
+            left: 0;
+            position: absolute;
+            right: 0;
+        }
+        .top {
+            background-color: #2a2a41;
+            transform-origin: 50% 100%;
+            transform: perspective(200px);
+            z-index: 3;
+        }
+        .top::after,
+        .bottom-back::after {
+            border-bottom: 1px solid hsl(240, 12%, 16%);
+            bottom: 0;
+            content: "";
+            height: 100%;
+            left: 0;
+            position: absolute;
+            width: 100%;
+            z-index: -1;
+        }
+        .bottom {
+            z-index: 1;
+            &::before {
+                background-color: #33354d;
+                content: "";
+                display: block;
+                height: 50%;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 100%;
+            }
+        }
+        .bottom-back {
+            background-color: #33354d;
+            height: 50%;
+            overflow: hidden;
+            top: 0;
+            z-index: 2;
+            span {
+                bottom: 0;
+                left: 0;
+                margin: auto;
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+        }
+        .top,
+        .top-back {
+            backface-visibility: hidden;
+            height: 50%;
+            overflow: hidden;
+        }
+        .top-back {
+            background-color: rgb(51, 53, 77);
+            bottom: 0;
+            transform-origin: 50% 0;
+            transform: perspective(200px) rotateX(180deg);
+            z-index: 4;
+            span {
+                left: 0;
+                margin: auto;
+                position: absolute;
+                right: 0;
+                top: -100%;
+            }
+        }
+    }
+    .attribution {
+        display: flex;
+        flex-direction: column;
+        margin-top: 250px;
+        text-align: center;
+        .attribution-text {
+            color: $GrayishBlue;
+        }
+        .social-medias {
+            display: flex;
+            justify-content: space-evenly;
+            list-style: none;
+            .social-links {
+                margin: 10px;
+                font-size: 50px;
+            }
+        }
+        .social-links,
+        a {
+            color: $White;
+            &:hover {
+                color: $SoftRed;
+            }
+            &:focus {
+                color: $SoftRed;
+                outline: $White dotted 3px;
+                outline-offset: 0.5em;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main-content .container-countdown {
+        flex-direction: column;
+    }
 }
