@@ -14,11 +14,11 @@ This is a solution to the [Launch countdown timer challenge on Frontend Mentor](
 
 <div align="center">
   <h3>
-    <a href="https://theslladev.github.io/Lauch-Countdown-Timer">
+    <a href="https://theslladev.github.io/Launch-Countdown-Timer">
       Demo
     </a>
     <span> | </span>
-    <a href="https://your-url-to-the-solution">
+    <a href="[https://your-url-to-the-solution](https://www.frontendmentor.io/solutions/launch-countdown-timer-in-js-and-sass-_bU6CPnTp)">
       Solution
     </a>
     <span> | </span>
@@ -53,7 +53,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution in Frontend Mentor](#)
+- Solution URL: [Solution in Frontend Mentor]([#](https://www.frontendmentor.io/solutions/launch-countdown-timer-in-js-and-sass-_bU6CPnTp))
 - Live Site URL: [Launch-Countdown-Timer](https://theslladev.github.io/Launch-Countdown-Timer)
 
 ## My process
